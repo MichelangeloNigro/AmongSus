@@ -12,7 +12,7 @@ public class TaskCompleted : Riutilizzabile.AbstractGameEventListener
             slider.value = Manager.Instance.TaskCompleted/ Manager.Instance.TotalTask;
         if (Manager.Instance.TaskCompleted == Manager.Instance.TotalTask)
         {
-            Debug.Log("Vinto!");
+            Application.Quit();
         }
     }
 }

@@ -68,9 +68,11 @@
     <Compile Include="Assets\Scripts\Character\lightcaster.cs" />
     <Compile Include="Assets\Scripts\GameEvent\AbstractGameEventListener.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Event\BodyNearEvent.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Event\KillPlayer.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Event\NearInteractable.cs" />
     <Compile Include="Assets\Scripts\GameEvent\GameEvent.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\BodyNearListener.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Listener\ImpostorKill.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\InteravtableNear.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\ListenerReport.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\Table.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="Assets\Scripts\SingletonDDOL.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\UI\GoodButton.cs" />
+    <Compile Include="Assets\Scripts\UI\ImpostorButtons.cs" />
     <Compile Include="Assets\Scripts\UI\NeutralButton.cs" />
     <None Include="Assets\Material\Maskshader.shader" />
     <Reference Include="UnityEngine">

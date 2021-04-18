@@ -6,11 +6,14 @@ public class Manager : Riutilizzabile.Singleton<Manager>
 {
     [HideInInspector] public float TaskCompleted;
     [HideInInspector] public float TotalTask;
-    public GameObject currentminigame;
-    public GameObject currentBody;
+    [HideInInspector] public GameObject currentminigame;
+    [HideInInspector] public GameObject currentBody;
+    [HideInInspector] public GameObject currentTarget;
     public GameObject LocalPlayer;
     public GameObject good;
+    public GameObject goodTrigger;
     public GameObject impostor;
+    public GameObject impostorTrigger;
     public float TimeForTable;
     public float TimeForvotatione;
     [SerializeField] Button table;
@@ -21,10 +24,13 @@ public class Manager : Riutilizzabile.Singleton<Manager>
         if (LocalPlayer.GetComponent<Movement>().data.tipo == PlayerCustom.type.Normal)
         {
             good.SetActive(true);
+            goodTrigger.SetActive(true);
         }
         if (LocalPlayer.GetComponent<Movement>().data.tipo == PlayerCustom.type.Impostor)
         {
             impostor.SetActive(true);
+            impostorTrigger.SetActive(true);
+
         }
         timerTable.Raise();
         TotalTask = LocalPlayer.GetComponent<Movement>().data.TaskPerInstance;
