@@ -8,6 +8,7 @@ public class PlayerCustom : ScriptableObject
     public Color colore;
     public float vel;
     public Sprite hat;
+    public int TaskPerInstance;
     public enum type
     {
         Impostor,

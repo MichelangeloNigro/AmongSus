@@ -28,4 +28,8 @@ public class NeutralButton : MonoBehaviour
             Report_Table.Raise();
         }
     }
+    public void relaseCorutine()
+    {
+        Manager.Instance.curr_corutine = null;
+    }
 }

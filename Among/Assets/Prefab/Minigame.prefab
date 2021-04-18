@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa5fd829be005d40b1a851b681e4653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Complete: {fileID: 11400000, guid: 314eba3a344551342aabf7dc99bc4207, type: 2}
 --- !u!114 &6427664046208828914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88246d7d5557eba4b8e9796cd5833122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Report: {fileID: 0}
+  Report_Table: {fileID: 0}
+  reportButton: {fileID: 0}
 --- !u!1 &1975281701083796818
 GameObject:
   m_ObjectHideFlags: 0
