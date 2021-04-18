@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\SingletonDDOL.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\UI\Arrow.cs" />
     <Compile Include="Assets\Scripts\UI\GoodButton.cs" />
     <Compile Include="Assets\Scripts\UI\ImpostorButtons.cs" />
     <Compile Include="Assets\Scripts\UI\NeutralButton.cs" />
