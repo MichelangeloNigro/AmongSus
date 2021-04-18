@@ -7,19 +7,19 @@ public class NearVents : MonoBehaviour
     [SerializeField] Riutilizzabile.GameEvent nearVents;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Interactable"))
+        if (other.CompareTag("Vents"))
         {
             nearVents.Raise();
-            Manager.Instance.currentminigame = other.GetComponent<MinigameHolder>().prefabMinigame;
+          //  Manager.Instance. = other.GetComponent<MinigameHolder>().prefabMinigame;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Interactable"))
+        if (other.CompareTag("Vents"))
         {
             nearVents.Raise();
-            Manager.Instance.currentminigame = null;
+          //  Manager.Instance. = null;
         }
     }
 }

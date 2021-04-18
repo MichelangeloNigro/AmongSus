@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 739bb222b1c9aca43af6f924a688619a, type: 3}
   m_Name: Player1
   m_EditorClassIdentifier: 
-  tipo: 1
+  tipo: 0
   colore: {r: 0, g: 1, b: 0, a: 1}
   vel: 50
   hat: {fileID: 3052431224763956882, guid: 5451bb0971fc6624babe935b1683f063, type: 3}

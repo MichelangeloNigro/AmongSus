@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\GameEvent\Listener\ImpostorKill.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\InteravtableNear.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\ListenerReport.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Listener\ListenerVents.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\Table.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\TaskCompleted.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\TimerTable.cs" />

@@ -10,17 +10,24 @@ public class KillPlayer : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Manager.Instance.currentTarget = other.gameObject;
+            if (other.GetComponent<Movement>().data.tipo == PlayerCustom.type.Normal)
+            {
+                Manager.Instance.currentTarget = other.gameObject;
 
-            kill.Raise();
+                kill.Raise();
+            }
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Manager.Instance.currentTarget = null;
-            kill.Raise();
+            if (other.GetComponent<Movement>().data.tipo == PlayerCustom.type.Normal)
+            {
+
+                Manager.Instance.currentTarget = null;
+                kill.Raise();
+            }
         }
     }
 }

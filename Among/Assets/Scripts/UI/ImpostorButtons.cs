@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ImpostorButtons : MonoBehaviour
 {
     [SerializeField] GameObject prefabBody;
+    [SerializeField] GameObject characterSprite;
     [SerializeField] Button killB;
 public void kill()
     {
@@ -13,5 +14,9 @@ public void kill()
     var body=    Instantiate(prefabBody,Manager.Instance.currentTarget.transform.position,Quaternion.identity);
         body.GetComponent<SpriteRenderer>().color = Manager.Instance.currentTarget.GetComponent<Movement>().data.colore;
         Destroy(Manager.Instance.currentTarget);
+    }
+    public void Vent()
+    {
+        characterSprite.SetActive(false);
     }
 }
