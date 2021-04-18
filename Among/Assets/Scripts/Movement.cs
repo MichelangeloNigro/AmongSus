@@ -7,8 +7,8 @@ public class Movement : MonoBehaviour
     Rigidbody rb;
     [SerializeField] InputAction movement;
     Vector2 mov;
-    [SerializeField] float speed;
     SpriteRenderer[] renderer;
+    public PlayerCustom data;
     private void OnEnable()
     {
         movement.Enable();
@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour
     {
         renderer = GetComponentsInChildren<SpriteRenderer>();
         rb = GetComponent<Rigidbody>();
+        renderer[0].color = data.colore;
     }
 
     // Update is called once per frame
@@ -43,7 +44,7 @@ public class Movement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.velocity = mov * speed * Time.fixedDeltaTime;
+        rb.velocity = mov * data.vel * Time.fixedDeltaTime;
     }
 
 }
