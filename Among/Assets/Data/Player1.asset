@@ -15,3 +15,4 @@ MonoBehaviour:
   tipo: 1
   colore: {r: 1, g: 0, b: 0, a: 1}
   vel: 50
+  hat: {fileID: 3052431224763956882, guid: 5451bb0971fc6624babe935b1683f063, type: 3}

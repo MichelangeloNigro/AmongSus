@@ -64,18 +64,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BodyNearEvent.cs" />
-    <Compile Include="Assets\NearInteractable.cs" />
+    <Compile Include="Assets\Scripts\Character\Movement.cs" />
+    <Compile Include="Assets\Scripts\Character\lightcaster.cs" />
     <Compile Include="Assets\Scripts\GameEvent\AbstractGameEventListener.cs" />
-    <Compile Include="Assets\Scripts\GameEvent\BodyNearListener.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Event\BodyNearEvent.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Event\NearInteractable.cs" />
     <Compile Include="Assets\Scripts\GameEvent\GameEvent.cs" />
-    <Compile Include="Assets\Scripts\GameEvent\InteravtableNear.cs" />
-    <Compile Include="Assets\Scripts\Movement.cs" />
-    <Compile Include="Assets\Scripts\NeutralButton.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Listener\BodyNearListener.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Listener\InteravtableNear.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Listener\ListenerReport.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Listener\Table.cs" />
+    <Compile Include="Assets\Scripts\Manager.cs" />
+    <Compile Include="Assets\Scripts\Minigame\Iminigame.cs" />
+    <Compile Include="Assets\Scripts\Minigame\Minigame1.cs" />
+    <Compile Include="Assets\Scripts\Minigame\MinigameHolder.cs" />
     <Compile Include="Assets\Scripts\Outline.cs" />
-    <Compile Include="Assets\Scripts\PlayerCustom.cs" />
+    <Compile Include="Assets\Scripts\Scriptables\HatDatabase.cs" />
+    <Compile Include="Assets\Scripts\Scriptables\PlayerCustom.cs" />
+    <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\SingletonDDOL.cs" />
-    <Compile Include="Assets\Scripts\lightcaster.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\UI\GoodButton.cs" />
+    <Compile Include="Assets\Scripts\UI\NeutralButton.cs" />
     <None Include="Assets\Material\Maskshader.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.22f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
