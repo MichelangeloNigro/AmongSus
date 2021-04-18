@@ -1,18 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class BodyNearListener : MonoBehaviour
+using UnityEngine.UI;
+public class BodyNearListener : Riutilizzabile.AbstractGameEventListener
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Button ReportButton;
+    protected override void OnEventRaised()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        ReportButton.interactable = !ReportButton.interactable;
     }
 }

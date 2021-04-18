@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Good
   - Body
+  - Interactable
+  - Outline
   layers:
   - Default
   - TransparentFX
