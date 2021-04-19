@@ -9,14 +9,14 @@ public class ImpostorButtons : MonoBehaviour
     [SerializeField] GameObject characterSprite;
     [SerializeField] Button killB;
     [SerializeField] GameObject[] arrows;
-   
+    Coroutine curr_corutine;
+
     bool isinVent = false;
     public void kill()
     {
-        killB.interactable = false;
-        var body = Instantiate(prefabBody, Manager.Instance.currentTarget.transform.position, Quaternion.identity);
-        body.GetComponent<SpriteRenderer>().color = Manager.Instance.currentTarget.GetComponent<Movement>().data.colore;
-        Destroy(Manager.Instance.currentTarget);
+        if (curr_corutine == null)
+            curr_corutine = StartCoroutine(killTimer());
+
     }
     public void Vent()
     {
@@ -49,6 +49,29 @@ public class ImpostorButtons : MonoBehaviour
             item.SetActive(false);
         }
     }
-  
-   
+
+    IEnumerator killTimer()
+    {
+        killB.interactable = false;
+        Manager.Instance.currentTarget.SetActive(false);
+       var body = Instantiate(prefabBody, Manager.Instance.currentTarget.transform.position, Quaternion.identity);
+        body.SetActive(false);
+        body.GetComponent<SpriteRenderer>().color = Manager.Instance.currentTarget.GetComponent<Movement>().data.colore;
+        yield return new WaitForSeconds(2f);
+        body.SetActive(true);
+        Destroy(Manager.Instance.currentTarget);
+        if (Manager.Instance.TotalNormalPlayer > 1)
+        {
+            Manager.Instance.TotalNormalPlayer--;
+            Debug.Log("kill");
+
+        }
+        else
+        {
+            Application.Quit();
+            Debug.Log("exit");
+        }
+        curr_corutine = null;
+    }
+
 }

@@ -1,19 +1,25 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Arrow
     - BodyNearEvent
     - BodyNearListener
+    - ButtonDebug
     - GoodButton
+    - HatDatabase
     - ImpostorButtons
     - ImpostorKill
     - InteravtableNear
     - KillPlayer
+    - ListenerCustomPref
     - ListenerReport
+    - ListenerVents
     - Manager
     - Minigame1
     - MinigameHolder
     - Movement
     - NearInteractable
+    - NearVents
     - NeutralButton
     - Outline
     - PlayerCustom
@@ -22,6 +28,7 @@ ScriptsOnlyBuild:
     - TaskCompleted
     - Timer
     - TimerTable
+    - colorDAtabase
     - lightcaster
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -106,49 +113,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 12154}
+      Script: {instanceID: 11886}
     - Class: 114
-      Script: {instanceID: 12358}
+      Script: {instanceID: 12156}
     - Class: 114
-      Script: {instanceID: 12470}
+      Script: {instanceID: 12326}
     - Class: 114
-      Script: {instanceID: 12484}
+      Script: {instanceID: 12360}
     - Class: 114
-      Script: {instanceID: 12492}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 12664}
+      Script: {instanceID: 12486}
     - Class: 114
-      Script: {instanceID: 13028}
+      Script: {instanceID: 12494}
     - Class: 114
-      Script: {instanceID: 13230}
+      Script: {instanceID: 12558}
+    - Class: 114
+      Script: {instanceID: 12668}
+    - Class: 114
+      Script: {instanceID: 12886}
+    - Class: 114
+      Script: {instanceID: 13034}
     - Class: 114
       Script: {instanceID: 13236}
     - Class: 114
-      Script: {instanceID: 13394}
+      Script: {instanceID: 13242}
     - Class: 114
-      Script: {instanceID: 13592}
+      Script: {instanceID: 13400}
     - Class: 114
-      Script: {instanceID: 13598}
+      Script: {instanceID: 13550}
     - Class: 114
-      Script: {instanceID: 14112}
+      Script: {instanceID: 13600}
     - Class: 114
-      Script: {instanceID: 14170}
+      Script: {instanceID: 13606}
     - Class: 114
-      Script: {instanceID: 14246}
+      Script: {instanceID: 13926}
+    - Class: 114
+      Script: {instanceID: 14122}
+    - Class: 114
+      Script: {instanceID: 14180}
     - Class: 114
       Script: {instanceID: 14256}
     - Class: 114
-      Script: {instanceID: 14284}
+      Script: {instanceID: 14266}
     - Class: 114
-      Script: {instanceID: 14310}
+      Script: {instanceID: 14294}
     - Class: 114
-      Script: {instanceID: 14466}
+      Script: {instanceID: 14320}
     - Class: 114
-      Script: {instanceID: 14546}
+      Script: {instanceID: 14476}
     - Class: 114
-      Script: {instanceID: 14854}
+      Script: {instanceID: 14556}
     - Class: 114
-      Script: {instanceID: 15056}
+      Script: {instanceID: 14858}
+    - Class: 114
+      Script: {instanceID: 14864}
+    - Class: 114
+      Script: {instanceID: 15066}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -342,6 +363,12 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
+      Hash: 8fe4ca70b481a6737cdd5a05c5e854d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: colorDAtabase
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -510,6 +537,12 @@ ScriptsOnlyBuild:
     className: SpriteShape
   - hash:
       serializedVersion: 2
+      Hash: ae3d53425af3eb7de9c2958eb60ff9b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ListenerVents
+  - hash:
+      serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -570,6 +603,12 @@ ScriptsOnlyBuild:
     className: PlayerInputEditor
   - hash:
       serializedVersion: 2
+      Hash: 7a4c20c53eee0c4b9affa63d5cb40aab
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ListenerCustomPref
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -606,7 +645,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 1e143be987cf1370439b82930215f4dd
+      Hash: a50a42dbe8a629dc9f97c9fd12ffa0c4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ImpostorButtons
@@ -676,6 +715,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.OnScreen
     className: OnScreenButton
+  - hash:
+      serializedVersion: 2
+      Hash: 4602bd5751c9101c1222ba892fd60116
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonDebug
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -762,6 +807,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: e52dc3aef04535d74ec7333aedef2cb0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Arrow
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -798,7 +849,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 7226d4c1e4feff8f19965b929891bf44
+      Hash: 5e5edbc7181aa454fc25aabac2dfbb1a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Manager
@@ -876,7 +927,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 581a8ab1dc69c3cdbabf885e82da37f1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NearVents

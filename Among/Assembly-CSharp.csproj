@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\GameEvent\Listener\BodyNearListener.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\ImpostorKill.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\InteravtableNear.cs" />
+    <Compile Include="Assets\Scripts\GameEvent\Listener\ListenerCustomPref.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\ListenerReport.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\ListenerVents.cs" />
     <Compile Include="Assets\Scripts\GameEvent\Listener\Table.cs" />
@@ -87,10 +88,12 @@
     <Compile Include="Assets\Scripts\Outline.cs" />
     <Compile Include="Assets\Scripts\Scriptables\HatDatabase.cs" />
     <Compile Include="Assets\Scripts\Scriptables\PlayerCustom.cs" />
+    <Compile Include="Assets\Scripts\Scriptables\colorDAtabase.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\SingletonDDOL.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\UI\Arrow.cs" />
+    <Compile Include="Assets\Scripts\UI\ButtonDebug.cs" />
     <Compile Include="Assets\Scripts\UI\GoodButton.cs" />
     <Compile Include="Assets\Scripts\UI\ImpostorButtons.cs" />
     <Compile Include="Assets\Scripts\UI\NeutralButton.cs" />

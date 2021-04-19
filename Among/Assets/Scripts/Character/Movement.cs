@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     Vector2 mov;
     SpriteRenderer[] renderer;
     public PlayerCustom data;
-   [SerializeField] SpriteRenderer Hat;
+    [SerializeField] SpriteRenderer Hat;
     private void OnEnable()
     {
         movement.Enable();
@@ -24,13 +24,15 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         renderer[0].color = data.colore;
         Hat.sprite = data.hat;
+        if (data.tipo == PlayerCustom.type.Normal)
+            Manager.Instance.TotalNormalPlayer++;
     }
 
     // Update is called once per frame
     void Update()
     {
         mov = movement.ReadValue<Vector2>();
-        foreach  (SpriteRenderer s in renderer)
+        foreach (SpriteRenderer s in renderer)
         {
             if (rb.velocity.x < 0)
             {
@@ -42,8 +44,8 @@ public class Movement : MonoBehaviour
 
             }
         }
-   
-        
+
+
     }
     private void FixedUpdate()
     {
