@@ -645,7 +645,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: a50a42dbe8a629dc9f97c9fd12ffa0c4
+      Hash: a3b5870e2a96dfb35d7e7772ca8428f5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ImpostorButtons

@@ -89,8 +89,8 @@
     <Compile Include="Assets\Scripts\Scriptables\HatDatabase.cs" />
     <Compile Include="Assets\Scripts\Scriptables\PlayerCustom.cs" />
     <Compile Include="Assets\Scripts\Scriptables\colorDAtabase.cs" />
-    <Compile Include="Assets\Scripts\Singleton.cs" />
-    <Compile Include="Assets\Scripts\SingletonDDOL.cs" />
+    <Compile Include="Assets\Scripts\Singleton\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Singleton\SingletonDDOL.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\UI\Arrow.cs" />
     <Compile Include="Assets\Scripts\UI\ButtonDebug.cs" />

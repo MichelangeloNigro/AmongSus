@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player2
   m_EditorClassIdentifier: 
   tipo: 1
-  colore: {r: 0.16981131, g: 0.15299037, b: 0.15299037, a: 1}
+  colore: {r: 0, g: 0.9549899, b: 1, a: 1}
   vel: 0
-  hat: {fileID: 7941308992334432410, guid: 5451bb0971fc6624babe935b1683f063, type: 3}
+  hat: {fileID: 3226915125315712707, guid: 5451bb0971fc6624babe935b1683f063, type: 3}
   TaskPerInstance: 0

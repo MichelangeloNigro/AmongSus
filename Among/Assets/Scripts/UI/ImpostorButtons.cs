@@ -10,6 +10,7 @@ public class ImpostorButtons : MonoBehaviour
     [SerializeField] Button killB;
     [SerializeField] GameObject[] arrows;
     Coroutine curr_corutine;
+    [SerializeField] UnityEngine.InputSystem.OnScreen.OnScreenStick controller;
 
     bool isinVent = false;
     public void kill()
@@ -39,6 +40,8 @@ public class ImpostorButtons : MonoBehaviour
         {
             item.SetActive(true);
         }
+        controller.enabled = false;
+        killB.gameObject.SetActive(false);
     }
     private void OutVent()
     {
@@ -48,6 +51,9 @@ public class ImpostorButtons : MonoBehaviour
         {
             item.SetActive(false);
         }
+        controller.enabled = true;
+        killB.gameObject.SetActive(true);
+
     }
 
     IEnumerator killTimer()
